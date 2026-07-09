@@ -13,14 +13,13 @@ Findus is a conversational friend for kids who need more Swedish in their lives.
 
 ## Features
 
-- Google Cloud Speech-to-Text (Swedish)
-- Gemini 2.5 Flash for conversation (Swedish cat persona)
-- Google Cloud Text-to-Speech with three voices (Findus, Morfar, System)
-- Slack integration for family messaging
+- Swedish speech recognition and synthesis with three distinct voices (Findus, Morfar, System)
+- Conversational Swedish cat persona that keeps kids talking
+- Slack integration for family messaging ("Morfar: ..." routes to grandpa)
 - Remote config via Slack canvas (no reflash needed to change behavior)
 - OTA firmware updates from this repo
 - Crash reporting to Slack
-- VAD silence detection with natural pause handling
+- Voice activity detection with natural pause handling
 
 ## OTA Updates
 
