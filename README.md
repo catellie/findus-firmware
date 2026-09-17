@@ -36,8 +36,8 @@ boxes are offered.
 
 ## Managed family installation
 
-The older managed installation uses Slack, a private configuration canvas, and
-optional household infrastructure. Its OTA binaries remain available under
+The managed edition uses Slack, a private configuration canvas, and optional
+household infrastructure. Its OTA binaries remain available under
 [Releases](https://github.com/catellie/findus-firmware/releases), but they are
 not the correct first-install images for a household-owned standalone Findus.
 
