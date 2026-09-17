@@ -1,0 +1,16 @@
+{
+  "name": "Findus Household — Round 1.28-inch Findus",
+  "version": "2.3.6",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "../firmware/round/findus-round-factory.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

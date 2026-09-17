@@ -1,0 +1,7 @@
+commit=1d95700a2fbd74cd394c5c17a2698638a20187d0
+source=committed
+source_patch_sha256=none
+board=sp-esp32-s3-1.28-box
+configuration=standalone
+app_bytes=3546656
+app_sha256=b7b7590a23493881d09e602d30f9e31b0c37f559771d38f725584f55440b30a8

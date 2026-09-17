@@ -1,55 +1,51 @@
-# Findus Firmware
+# Findus
 
-Firmware releases for Findus, a Swedish language tutor built on the ESP32-S3 platform.
+Findus is a small ESP32-S3 companion for children: press the screen, talk, and
+Findus answers with a child-friendly voice. It can hold a conversation, tell
+interactive stories, and play requested music and stories through Spotify.
 
-Findus is a conversational friend for kids who need more Swedish in their lives. Press the button, speak Swedish, and Findus (the cat from Pettson och Findus) responds with questions, encouragement, and gentle corrections. Messages prefixed with "Morfar" are routed to Slack so grandpa can stay in the loop.
+## Set up a household Findus
 
-## Hardware
+The household edition keeps the family's settings in a private Google Sheet.
+The public firmware contains no Wi-Fi passwords, Google keys, Spotify login, or
+details about another family.
 
-- Board: Spotpear ESP32-S3 1.54" MUMA (ESP32-S3-WROOM-1-N16R8)
-- Audio: ES8388 codec, MEMS microphone, 1W speaker
-- Display: 1.54" IPS LCD 240x240 (ST7789)
-- Based on the [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) framework (v2.2.6 fork)
+**Start here: [Set up Findus Household](https://catellie.github.io/findus-firmware/household/)**
 
-## Features
+You will need:
 
-- Swedish speech recognition and synthesis with three distinct voices (Findus, Morfar, System)
-- Conversational Swedish cat persona that keeps kids talking
-- Slack integration for family messaging ("Morfar: ..." routes to grandpa)
-- Remote config via Slack canvas (no reflash needed to change behavior)
-- OTA firmware updates from this repo
-- Crash reporting to Slack
-- Voice activity detection with natural pause handling
+- a supported Findus device;
+- a USB data cable and a desktop computer running Chrome or Edge;
+- a Google account for the private household Sheet; and
+- the courage to replace the original firmware on a small device from China.
 
-## OTA Updates
+The setup guide first creates the household Sheet and bridge, then identifies
+and flashes the exact hardware model, and finally connects the device using a
+short-lived enrollment bundle. Never select firmware merely because two boxes
+look similar.
 
-Devices check this repo's latest release on boot. If a newer version is found, the firmware is downloaded and flashed automatically with rollback protection.
+### Supported household hardware
 
-## Flashing Manually
+- **Round 1.28-inch Findus** — `sp-esp32-s3-1.28-box`
+- **White Waveshare 2.16-inch AMOLED** — `waveshare/esp32-s3-touch-amoled-2.16`
 
-```bash
-# Full flash (first time or recovery)
-esptool.py --chip esp32s3 --port /dev/cu.usbmodem21201 --baud 460800 \
-  write_flash 0x0 merged-binary.bin
+The installer presents a separate button for each board. A future revision will
+add before-and-after photographs showing the factory device and its Findus
+screen, plus distinctive ports and labels, before additional similar white
+boxes are offered.
 
-# App-only flash (preserves WiFi config)
-esptool.py --chip esp32s3 --port /dev/cu.usbmodem21201 --baud 460800 \
-  write_flash 0x20000 xiaozhi.bin
-```
+## Managed family installation
 
-## Configuration
+The older managed installation uses Slack, a private configuration canvas, and
+optional household infrastructure. Its OTA binaries remain available under
+[Releases](https://github.com/catellie/findus-firmware/releases), but they are
+not the correct first-install images for a household-owned standalone Findus.
 
-Findus loads configuration from three sources (highest priority first):
+## Recovery and verification
 
-1. **SD card** (`/sdcard/findus_config.json`) -- per-device settings (child name, WiFi, Slack channel)
-2. **Slack canvas** -- shared system prompt, conversation seeds, cultural references (editable from phone)
-3. **Built-in defaults** -- compiled into firmware as fallback
+Each versioned household installer includes full factory images, OTA/recovery
+images, build metadata, and SHA-256 checksums. The browser installer chooses the
+factory image and flash offset automatically.
 
-## Creating a Release
-
-```bash
-gh release create v1.1.0 build/merged-binary.bin \
-  --repo catellie/findus-firmware \
-  --title "v1.1.0" \
-  --notes "Description of changes"
-```
+Findus is based on the
+[xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) framework.
