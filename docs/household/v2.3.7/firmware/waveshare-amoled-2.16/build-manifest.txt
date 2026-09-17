@@ -1,0 +1,7 @@
+commit=0a95a1034c1673e7c7af95b92afc6c62109a73dd
+source=committed
+source_patch_sha256=none
+board=waveshare/esp32-s3-touch-amoled-2.16
+configuration=standalone
+app_bytes=3665344
+app_sha256=4cb4b813fc29473950d235c4788ae02e7d4d6b56b1edee41fb3ec90eee1a1fc7

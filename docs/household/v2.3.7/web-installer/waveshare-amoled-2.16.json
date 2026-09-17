@@ -1,0 +1,16 @@
+{
+  "name": "Findus Household — White Waveshare 2.16-inch AMOLED Findus",
+  "version": "2.3.7",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "../firmware/waveshare-amoled-2.16/findus-waveshare-amoled-2.16-factory.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

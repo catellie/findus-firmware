@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <title>Install Findus Household</title>
+    <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+    <style>
+      :root {
+        font-family: system-ui, sans-serif;
+        line-height: 1.45;
+        --accent: #28783d;
+        --esp-tools-button-color: var(--accent);
+        --esp-tools-button-text-color: white;
+        --esp-tools-button-border-radius: 0.6rem;
+      }
+      body { margin: 0; }
+      main { max-width: 54rem; margin: auto; padding: 2rem 1rem 4rem; }
+      h1 { margin-bottom: 0.25rem; }
+      .lead { font-size: 1.1rem; margin-top: 0; }
+      .step, .board {
+        border: 1px solid color-mix(in srgb, CanvasText 22%, transparent);
+        border-radius: 0.8rem;
+        margin: 1rem 0;
+        padding: 1rem 1.2rem;
+      }
+      .boards { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 1rem; }
+      .board { margin: 0; }
+      .board-id { font-family: ui-monospace, monospace; font-size: 0.85rem; overflow-wrap: anywhere; }
+      .copy-link, button {
+        background: var(--accent); color: white; border: 0; border-radius: 0.6rem;
+        display: inline-block; font: inherit; font-weight: 650; padding: 0.75rem 1rem;
+        text-decoration: none;
+      }
+      .warning { border-left: 0.35rem solid #d68b00; padding-left: 0.8rem; }
+      li + li { margin-top: 0.4rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Set up Findus Household</h1>
+      <p class="lead">A private Google Sheet, a generic Findus, and no household secrets in the firmware.</p>
+
+      <section class="step">
+        <h2>1. Copy the household Sheet</h2>
+        <p>Create your private copy, then use <strong>Findus &gt; Set up Findus</strong> to initialize and deploy it.</p>
+        <a class="copy-link" href="https://docs.google.com/spreadsheets/d/1lVdV5u5hUxVgkZZ4KlsHdFo0BH_kcI4B0WyUQ7ghX-8/copy" target="_blank" rel="noopener">Copy the Findus Household Sheet</a>
+      </section>
+
+      <section class="step">
+        <h2>2. Install Findus</h2>
+        <p class="warning"><strong>Choose by the exact product.</strong> Disconnect other ESP32 devices before installing. These two devices use different firmware even though both contain an ESP32-S3.</p>
+        <div class="boards">
+          <article class="board">
+            <h3>Round 1.28-inch Findus</h3>
+            <p class="board-id">sp-esp32-s3-1.28-box</p>
+            <esp-web-install-button manifest="web-installer/round.json">
+              <span slot="unsupported">Use a desktop browser that supports Web Serial.</span>
+              <span slot="not-allowed">Allow this page to use the connected USB device.</span>
+            </esp-web-install-button>
+          </article>
+          <article class="board">
+            <h3>White Waveshare 2.16-inch AMOLED</h3>
+            <p class="board-id">waveshare/esp32-s3-touch-amoled-2.16</p>
+            <esp-web-install-button manifest="web-installer/waveshare-amoled-2.16.json">
+              <span slot="unsupported">Use a desktop browser that supports Web Serial.</span>
+              <span slot="not-allowed">Allow this page to use the connected USB device.</span>
+            </esp-web-install-button>
+          </article>
+        </div>
+      </section>
+
+      <section class="step">
+        <h2>3. Connect and enroll</h2>
+        <ol>
+          <li>Wait until the newly installed device makes a <strong>Findus-XXXX</strong> Wi-Fi network. Stay on your normal internet connection for now.</li>
+          <li>Return to <strong>Findus &gt; Set up Findus</strong> in the Sheet. Enter the child or owner's name, create the 30-minute enrollment bundle, and copy it.</li>
+          <li>Join <strong>Findus-XXXX</strong>, then enter the household Wi-Fi password.</li>
+          <li>Paste the complete enrollment bundle copied from the Sheet.</li>
+          <li>Wait while Findus registers and builds its local language pack.</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>

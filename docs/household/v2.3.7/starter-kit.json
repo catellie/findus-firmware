@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "product": "Findus Household Starter Kit",
+  "version": "2.3.7",
+  "source_commit": "0a95a1034c1673e7c7af95b92afc6c62109a73dd",
+  "source_mode": "committed",
+  "configuration": "standalone",
+  "sheet_template_url": "https://docs.google.com/spreadsheets/d/1lVdV5u5hUxVgkZZ4KlsHdFo0BH_kcI4B0WyUQ7ghX-8/copy",
+  "publishable": true,
+  "boards": [
+    {
+      "board_id": "sp-esp32-s3-1.28-box",
+      "runtime_board_id": "sp-esp32-s3-1.28-box",
+      "slug": "round",
+      "display_name": "Round 1.28-inch Findus",
+      "chip_family": "ESP32-S3",
+      "qualification": "standalone-factory-boot-qualified-enrollment-required",
+      "factory": {
+        "path": "firmware/round/findus-round-factory.bin",
+        "offset": 0,
+        "bytes": 9719012,
+        "sha256": "d09373a41670c6c1a4e77d24da789015ad8ddac7c69400ee1213a2c8326f6b74"
+      },
+      "ota": {
+        "path": "firmware/round/findus-round-ota.bin",
+        "bytes": 3547424,
+        "sha256": "6399b64df1afd417c078bc511f9e0eef632d2176ba630594ea95bdc0a8ca6ee8"
+      },
+      "web_installer_manifest": "web-installer/round.json"
+    },
+    {
+      "board_id": "waveshare/esp32-s3-touch-amoled-2.16",
+      "runtime_board_id": "esp32-s3-touch-amoled-2.16",
+      "slug": "waveshare-amoled-2.16",
+      "display_name": "White Waveshare 2.16-inch AMOLED Findus",
+      "chip_family": "ESP32-S3",
+      "qualification": "standalone-physical-validation-required",
+      "factory": {
+        "path": "firmware/waveshare-amoled-2.16/findus-waveshare-amoled-2.16-factory.bin",
+        "offset": 0,
+        "bytes": 11354620,
+        "sha256": "85d8395f5ef0142830e0939f61fc99538e2a2a5a6f5822cb564fbcc7bfa6bac9"
+      },
+      "ota": {
+        "path": "firmware/waveshare-amoled-2.16/findus-waveshare-amoled-2.16-ota.bin",
+        "bytes": 3665344,
+        "sha256": "4cb4b813fc29473950d235c4788ae02e7d4d6b56b1edee41fb3ec90eee1a1fc7"
+      },
+      "web_installer_manifest": "web-installer/waveshare-amoled-2.16.json"
+    }
+  ]
+}
