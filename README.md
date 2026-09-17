@@ -47,5 +47,10 @@ Each versioned household installer includes full factory images, OTA/recovery
 images, build metadata, and SHA-256 checksums. The browser installer chooses the
 factory image and flash offset automatically.
 
+Enrolled household devices receive standalone updates from the public
+[stable channel](https://catellie.github.io/findus-firmware/ota/standalone/stable.json).
+Its versioned manifests and binaries are separate from managed-family releases,
+which may contain installation-specific integrations.
+
 Findus is based on the
 [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) framework.
