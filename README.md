@@ -37,9 +37,12 @@ boxes are offered.
 ## Managed family installation
 
 The managed edition uses Slack, a private configuration canvas, and optional
-household infrastructure. Its OTA binaries remain available under
-[Releases](https://github.com/catellie/findus-firmware/releases), but they are
-not the correct first-install images for a household-owned standalone Findus.
+household infrastructure. The reusable generic-managed firmware contains no
+installation credentials; its private configuration is installed separately
+as an encrypted managed bundle. Managed devices receive updates from their
+separate public [stable channel](https://catellie.github.io/findus-firmware/ota/generic-managed/stable.json).
+These are not the correct first-install images for a household-owned standalone
+Findus.
 
 ## Recovery and verification
 
@@ -49,8 +52,8 @@ factory image and flash offset automatically.
 
 Enrolled household devices receive standalone updates from the public
 [stable channel](https://catellie.github.io/findus-firmware/ota/standalone/stable.json).
-Its versioned manifests and binaries are separate from managed-family releases,
-which may contain installation-specific integrations.
+Its versioned manifests and binaries are separate from generic-managed
+releases so a device cannot cross between the two configurations by OTA.
 
 Findus is based on the
 [xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) framework.

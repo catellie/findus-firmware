@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "channel": "generic-managed",
+  "configuration": "generic-managed",
+  "tag_name": "v2.3.8",
+  "source_commit": "3088a70ce22b43462475ed1ddcc1ba85ab8e0eed",
+  "source_mode": "committed",
+  "managed_bundle_schema": {"minimum": 2, "maximum": 2},
+  "assets": [
+    {
+      "name": "findus-sp-esp32-s3-1.28-box.bin",
+      "board_id": "sp-esp32-s3-1.28-box",
+      "build_board": "sp-esp32-s3-1.28-box",
+      "size": 3644688,
+      "sha256": "9f10fb4153d57447ca2319ddc1a173ca53859ff016e9a37b32674c035a8cade5",
+      "browser_download_url": "https://catellie.github.io/findus-firmware/ota/generic-managed/v2.3.8/findus-sp-esp32-s3-1.28-box.bin"
+    },
+    {
+      "name": "findus-sp-esp32-s3-1.54-muma.bin",
+      "board_id": "sp-esp32-s3-1.54-muma",
+      "build_board": "sp-esp32-s3-1.54-muma",
+      "size": 3621696,
+      "sha256": "b7fcd3fbf55ff7a0eeb53fa9cb8651691f221570fb640ad00bea644d38b9fa4f",
+      "browser_download_url": "https://catellie.github.io/findus-firmware/ota/generic-managed/v2.3.8/findus-sp-esp32-s3-1.54-muma.bin"
+    },
+    {
+      "name": "findus-esp32-s3-touch-lcd-1.54.bin",
+      "board_id": "esp32-s3-touch-lcd-1.54",
+      "build_board": "waveshare/esp32-s3-touch-lcd-1.54",
+      "size": 3680928,
+      "sha256": "1ef812a5d9949efa544fdf717061a15f0df5fe3daa007da62bf3809c9d4554ea",
+      "browser_download_url": "https://catellie.github.io/findus-firmware/ota/generic-managed/v2.3.8/findus-esp32-s3-touch-lcd-1.54.bin"
+    },
+    {
+      "name": "findus-esp32-s3-touch-amoled-2.16.bin",
+      "board_id": "esp32-s3-touch-amoled-2.16",
+      "build_board": "waveshare/esp32-s3-touch-amoled-2.16",
+      "size": 3762256,
+      "sha256": "54ed0ef458d6ba997f283e65b386b4e4f867a70e3cdb9e911623fbded3deac70",
+      "browser_download_url": "https://catellie.github.io/findus-firmware/ota/generic-managed/v2.3.8/findus-esp32-s3-touch-amoled-2.16.bin"
+    }
+  ]
+}
