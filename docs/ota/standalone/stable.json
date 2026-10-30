@@ -2,8 +2,8 @@
   "schema_version": 1,
   "channel": "standalone",
   "configuration": "standalone",
-  "tag_name": "v2.3.7",
-  "source_commit": "0a95a1034c1673e7c7af95b92afc6c62109a73dd",
+  "tag_name": "v2.3.10",
+  "source_commit": "729e0c0a1d1c473cbb2b07347acc860975b320bb",
   "source_mode": "committed",
   "minimum_bridge_protocol": 1,
   "assets": [
@@ -11,17 +11,17 @@
       "name": "findus-sp-esp32-s3-1.28-box.bin",
       "board_id": "sp-esp32-s3-1.28-box",
       "build_board": "sp-esp32-s3-1.28-box",
-      "size": 3547424,
-      "sha256": "6399b64df1afd417c078bc511f9e0eef632d2176ba630594ea95bdc0a8ca6ee8",
-      "browser_download_url": "https://catellie.github.io/findus-firmware/ota/standalone/v2.3.7/findus-sp-esp32-s3-1.28-box.bin"
+      "size": 3660720,
+      "sha256": "1440e683a1cd185759af4dc05bf665c621bcd094ede8ffb4d572ba2592f87d74",
+      "browser_download_url": "https://catellie.github.io/findus-firmware/ota/standalone/v2.3.10/findus-sp-esp32-s3-1.28-box.bin"
     },
     {
       "name": "findus-esp32-s3-touch-amoled-2.16.bin",
       "board_id": "esp32-s3-touch-amoled-2.16",
       "build_board": "waveshare/esp32-s3-touch-amoled-2.16",
-      "size": 3665344,
-      "sha256": "4cb4b813fc29473950d235c4788ae02e7d4d6b56b1edee41fb3ec90eee1a1fc7",
-      "browser_download_url": "https://catellie.github.io/findus-firmware/ota/standalone/v2.3.7/findus-esp32-s3-touch-amoled-2.16.bin"
+      "size": 3778400,
+      "sha256": "b66a771e3fb31fcc921e575204c91955a7beaf59f897b8dcd3c73aedcdbffe2e",
+      "browser_download_url": "https://catellie.github.io/findus-firmware/ota/standalone/v2.3.10/findus-esp32-s3-touch-amoled-2.16.bin"
     }
   ]
 }
