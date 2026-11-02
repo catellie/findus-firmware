@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "channel": "generic-managed",
+  "configuration": "generic-managed",
+  "tag_name": "v2.3.11",
+  "source_commit": "126be12bfa51eeb45dfdf7139d5ad73589917a8b",
+  "source_mode": "committed",
+  "managed_bundle_schema": {"minimum": 2, "maximum": 2},
+  "assets": [
+    {
+      "name": "findus-sp-esp32-s3-1.28-box.bin",
+      "board_id": "sp-esp32-s3-1.28-box",
+      "build_board": "sp-esp32-s3-1.28-box",
+      "size": 3650944,
+      "sha256": "cf7a43e479a3f642070ca5a1c5eca14ccda1460f68e9c03e5c67bbbe97b2da06",
+      "browser_download_url": "https://catellie.github.io/findus-firmware/ota/generic-managed/v2.3.11/findus-sp-esp32-s3-1.28-box.bin"
+    }
+  ]
+}
