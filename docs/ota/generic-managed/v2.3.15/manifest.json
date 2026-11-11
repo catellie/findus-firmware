@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "channel": "generic-managed",
+  "configuration": "generic-managed",
+  "tag_name": "v2.3.15",
+  "source_commit": "5811124e296ea060af51fc96bfef14a28a71bfee",
+  "source_mode": "committed",
+  "managed_bundle_schema": {"minimum": 2, "maximum": 2},
+  "assets": [
+    {
+      "name": "findus-sp-esp32-s3-1.28-box.bin",
+      "board_id": "sp-esp32-s3-1.28-box",
+      "build_board": "sp-esp32-s3-1.28-box",
+      "size": 3663744,
+      "sha256": "554c8660c1afde9fa201439e0ca3e3d6c5643a086654b07a0abeb62d6f32239c",
+      "browser_download_url": "https://catellie.github.io/findus-firmware/ota/generic-managed/v2.3.15/findus-sp-esp32-s3-1.28-box.bin"
+    },
+    {
+      "name": "findus-sp-esp32-s3-1.54-muma.bin",
+      "board_id": "sp-esp32-s3-1.54-muma",
+      "build_board": "sp-esp32-s3-1.54-muma",
+      "size": 3640800,
+      "sha256": "df3c3c43802ca0dda8cba46d3b41dc1f7f3b2efebe10ec3d76bd673a11560903",
+      "browser_download_url": "https://catellie.github.io/findus-firmware/ota/generic-managed/v2.3.15/findus-sp-esp32-s3-1.54-muma.bin"
+    },
+    {
+      "name": "findus-esp32-s3-touch-lcd-1.54.bin",
+      "board_id": "esp32-s3-touch-lcd-1.54",
+      "build_board": "waveshare/esp32-s3-touch-lcd-1.54",
+      "size": 3699984,
+      "sha256": "8fcf5aec935d740b96ed352ee102187a250d891374a4e88a9ccc1f42ac165452",
+      "browser_download_url": "https://catellie.github.io/findus-firmware/ota/generic-managed/v2.3.15/findus-esp32-s3-touch-lcd-1.54.bin"
+    },
+    {
+      "name": "findus-esp32-s3-findus-adaptive.bin",
+      "board_id": "esp32-s3-touch-lcd-1.83",
+      "build_board": "waveshare/esp32-s3-findus-adaptive",
+      "size": 3679328,
+      "sha256": "fb2fdaddfacc4a26c3c90bb2ba7c00eba25a1d68d560a0554c40dc464b2c4ed5",
+      "browser_download_url": "https://catellie.github.io/findus-firmware/ota/generic-managed/v2.3.15/findus-esp32-s3-findus-adaptive.bin"
+    },
+    {
+      "name": "findus-esp32-s3-findus-adaptive.bin",
+      "board_id": "esp32-s3-touch-amoled-2.16",
+      "build_board": "waveshare/esp32-s3-findus-adaptive",
+      "size": 3679328,
+      "sha256": "fb2fdaddfacc4a26c3c90bb2ba7c00eba25a1d68d560a0554c40dc464b2c4ed5",
+      "browser_download_url": "https://catellie.github.io/findus-firmware/ota/generic-managed/v2.3.15/findus-esp32-s3-findus-adaptive.bin"
+    }
+  ]
+}
