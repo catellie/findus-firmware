@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "product": "Findus Household Starter Kit",
+  "version": "2.3.14",
+  "source_commit": "7510ab17596373359455c903bfc732f141eb21eb",
+  "source_mode": "committed",
+  "configuration": "standalone",
+  "sheet_template_url": "https://docs.google.com/spreadsheets/d/1lVdV5u5hUxVgkZZ4KlsHdFo0BH_kcI4B0WyUQ7ghX-8/copy",
+  "publishable": true,
+  "boards": [
+    {
+      "board_id": "sp-esp32-s3-1.28-box",
+      "runtime_board_id": "sp-esp32-s3-1.28-box",
+      "runtime_board_ids": ["sp-esp32-s3-1.28-box"],
+      "slug": "round",
+      "display_name": "Round 1.28-inch Findus",
+      "chip_family": "ESP32-S3",
+      "support_level": "partial",
+      "qualification": "standalone-factory-boot-qualified-enrollment-required",
+      "factory": {
+        "path": "firmware/round/findus-round-factory.bin",
+        "offset": 0,
+        "bytes": 9719012,
+        "sha256": "abae44e79b8812c5f2fdcfdf852f5ad8b609e123daf6312396ede1256867b7ae"
+      },
+      "ota": {
+        "path": "firmware/round/findus-round-ota.bin",
+        "bytes": 3674288,
+        "sha256": "17edbb07604d6af21b50728fd8a1f59fbbbdc9878c2b3dd1cea0568ea9a6416e"
+      },
+      "web_installer_manifest": "web-installer/round.json"
+    },
+    {
+      "board_id": "sp-esp32-s3-1.54-muma",
+      "runtime_board_id": "sp-esp32-s3-1.54-muma",
+      "runtime_board_ids": ["sp-esp32-s3-1.54-muma"],
+      "slug": "muma-1.54",
+      "display_name": "MUMA 1.54-inch Findus",
+      "chip_family": "ESP32-S3",
+      "support_level": "partial",
+      "qualification": "standalone-physical-validation-partial-display-unavailable",
+      "factory": {
+        "path": "firmware/muma-1.54/findus-muma-1.54-factory.bin",
+        "offset": 0,
+        "bytes": 9719012,
+        "sha256": "4e17ba1f0acd765ab7dce1bd7c0ddb2143782276869e23daf252d9c009b4ca77"
+      },
+      "ota": {
+        "path": "firmware/muma-1.54/findus-muma-1.54-ota.bin",
+        "bytes": 3651152,
+        "sha256": "cff09c7c06f44b0807829e90e8a00a8b2c42169749e6bb4fb13479cc270bb0e0"
+      },
+      "web_installer_manifest": "web-installer/muma-1.54.json"
+    },
+    {
+      "board_id": "waveshare/esp32-s3-touch-lcd-1.54",
+      "runtime_board_id": "esp32-s3-touch-lcd-1.54",
+      "runtime_board_ids": ["esp32-s3-touch-lcd-1.54"],
+      "slug": "waveshare-lcd-1.54",
+      "display_name": "Waveshare 1.54-inch Findus",
+      "chip_family": "ESP32-S3",
+      "support_level": "probable",
+      "qualification": "standalone-probable-from-generic-managed-validation",
+      "factory": {
+        "path": "firmware/waveshare-lcd-1.54/findus-waveshare-lcd-1.54-factory.bin",
+        "offset": 0,
+        "bytes": 10095384,
+        "sha256": "9ffe9a445601787323a98eebaffeb55af062b8cd3751e75b1bc361d1356c984d"
+      },
+      "ota": {
+        "path": "firmware/waveshare-lcd-1.54/findus-waveshare-lcd-1.54-ota.bin",
+        "bytes": 3710496,
+        "sha256": "76445978ce6037a4fa3479df0cd0e230420d1d8a75e306c2f7eb70eb4f2f1cfd"
+      },
+      "web_installer_manifest": "web-installer/waveshare-lcd-1.54.json"
+    },
+    {
+      "board_id": "waveshare/esp32-s3-findus-adaptive",
+      "runtime_board_id": "esp32-s3-findus-adaptive",
+      "runtime_board_ids": ["esp32-s3-touch-lcd-1.83", "esp32-s3-touch-amoled-2.16"],
+      "slug": "waveshare-adaptive",
+      "display_name": "Adaptive Waveshare Portrait/AMOLED Findus",
+      "chip_family": "ESP32-S3",
+      "support_level": "verified",
+      "qualification": "standalone-physical-validation-complete",
+      "factory": {
+        "path": "firmware/waveshare-adaptive/findus-waveshare-adaptive-factory.bin",
+        "offset": 0,
+        "bytes": 11927571,
+        "sha256": "998ae92f744cfeefe79387c59b2af5d1193682a3dc3670f2f5f60ef4a953a4e8"
+      },
+      "ota": {
+        "path": "firmware/waveshare-adaptive/findus-waveshare-adaptive-ota.bin",
+        "bytes": 3689840,
+        "sha256": "92ff18064745723419f631c953365b431419109ffcea3bb422d2ab6567392abe"
+      },
+      "web_installer_manifest": "web-installer/waveshare-adaptive.json"
+    }
+  ]
+}

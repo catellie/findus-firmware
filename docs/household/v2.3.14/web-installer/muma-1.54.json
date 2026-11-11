@@ -1,0 +1,16 @@
+{
+  "name": "Findus Household — MUMA 1.54-inch Findus",
+  "version": "2.3.14",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "../firmware/muma-1.54/findus-muma-1.54-factory.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

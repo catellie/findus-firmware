@@ -1,0 +1,8 @@
+commit=7510ab17596373359455c903bfc732f141eb21eb
+source=committed
+source_patch_sha256=none
+board=waveshare/esp32-s3-touch-lcd-1.54
+configuration=standalone
+live_model=models/gemini-3.8-live
+app_bytes=3710496
+app_sha256=76445978ce6037a4fa3479df0cd0e230420d1d8a75e306c2f7eb70eb4f2f1cfd

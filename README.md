@@ -1,8 +1,21 @@
 # Findus
 
-Findus is a small ESP32-S3 companion for children: press the screen, talk, and
-Findus answers with a child-friendly voice. It can hold a conversation, tell
-interactive stories, and play requested music and stories through Spotify.
+Findus is a playful voice companion for children, running on a small ESP32-S3
+touch device. A child taps Findus and talks naturally: ask curious questions,
+continue an interactive story, practise ideas aloud, request music, or share
+something that happened. Findus adapts its language and level to the child
+while parents retain control over settings and can review what happened.
+
+There are two editions with the same child-facing Findus personality:
+
+| Choose | When it fits | Adult control |
+| --- | --- | --- |
+| **Household / standalone** | One family wants to own and try Findus directly | A private Google Sheet owned by the household |
+| **Generic managed** | A trusted technical person supports several devices or integrations | Slack, a private configuration Canvas, and encrypted device enrollment |
+
+Both firmware variants are reusable and contain no family's credentials. They
+use separate setup packages and OTA channels so one edition cannot silently
+turn into the other.
 
 ## Set up a household Findus
 
@@ -27,12 +40,13 @@ look similar.
 ### Supported household hardware
 
 - **Round 1.28-inch Findus** — `sp-esp32-s3-1.28-box`
-- **White Waveshare 2.16-inch AMOLED** — `waveshare/esp32-s3-touch-amoled-2.16`
+- **MUMA 1.54-inch Findus** — `sp-esp32-s3-1.54-muma`
+- **Waveshare 1.54-inch LCD** — `waveshare/esp32-s3-touch-lcd-1.54`
+- **Waveshare 1.83-inch portrait LCD** — adaptive Waveshare firmware
+- **Waveshare 2.16-inch AMOLED** — adaptive Waveshare firmware
 
-The installer presents a separate button for each board. A future revision will
-add before-and-after photographs showing the factory device and its Findus
-screen, plus distinctive ports and labels, before additional similar white
-boxes are offered.
+The installer presents a separate button for each build target. Choose by the
+exact product and board ID, never merely by screen size.
 
 ## Managed family installation
 
@@ -43,6 +57,10 @@ as an encrypted managed bundle. Managed devices receive updates from their
 separate public [stable channel](https://catellie.github.io/findus-firmware/ota/generic-managed/stable.json).
 These are not the correct first-install images for a household-owned standalone
 Findus.
+
+- [Managed parent setup guide](managed/START-HERE.md)
+- [Managed installation-operator guide](managed/OPERATOR-SETUP.md)
+- [Download the current release](https://github.com/catellie/findus-firmware/releases/latest)
 
 ## Recovery and verification
 
